@@ -3,7 +3,7 @@ import json
 app=FastAPI()
 
 def load_data():
-    with open('patients.json','r') as f:
+    with open('patients.json','r') as f:   # with is used for resource management, it ensures files are properly opened and automatically closed using context managers.”
         data = json.load(f)
 
     return data
